@@ -32,7 +32,7 @@ With **ASCIIArtify**, you can transform any text message into a big, eye-catchin
 
 2. Navigate to the project folder:
    ```bash
-   cd ASCIIArtify
+   cd ASCIIArtify/src
 3. Compile and run the program:
    ```bash
    javac Main.java
