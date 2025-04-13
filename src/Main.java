@@ -11,7 +11,7 @@ public class Main {
             String text = scanner.nextLine().trim();
             if (text.equalsIgnoreCase("q;")) {
                 out.println("Bye");
-                break;d
+                break;
             }
 
             if (text.isEmpty()) out.println("Error: Input text cannot be empty.");
