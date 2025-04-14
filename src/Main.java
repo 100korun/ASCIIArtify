@@ -1,4 +1,3 @@
-import org.jetbrains.annotations.NotNull;
 import java.util.Scanner;
 import static java.lang.System.out;
 
@@ -21,7 +20,7 @@ public class Main {
         }
     }
 
-    private static @NotNull String generateBanner(@NotNull String text) {
+    private static String generateBanner(String text) {
         text = text.toUpperCase();
         int height = LettersDictionary.BLOCK_LETTERS.get('A').length;
 
