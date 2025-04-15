@@ -6,11 +6,15 @@ public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         while(true) {
-            out.print("\nEnter text to convert to ASCII banner, type [q;] to quit: ");
+            out.print("\nEnter text to convert to ASCII banner, type [exit] to quit: ");
             String text = scanner.nextLine().trim();
-            if (text.equalsIgnoreCase("q;")) {
-                out.println("Bye");
-                break;
+            if (text.equalsIgnoreCase("exit")) {
+                out.print("Are you sure you want to exit? [y/n]: ");
+                String answer = scanner.nextLine().trim();
+                if (answer.equalsIgnoreCase("y")) {
+                    out.println("Bye");
+                    break;
+                }
             }
 
             if (text.isEmpty()) out.println("Error: Input text cannot be empty.");
